@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+
+    main {
+        background-color:#21e6c1;
+
+        nav {
+            position: fixed;
+            background-color: #278ea5;
+            top: 0;
+            left: 0;
+
+            header {
+                font-size: 2rem;
+                text-align: center;
+                text-transform: uppercase;
+                padding-top: 1rem;
+                color: #333333
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                li {
+                    padding: 2rem;
+
+                    a {
+                        font-size: 2rem;
+                        text-decoration: none;
+                        color: #333333;
+                        text-transform: uppercase;
+                    }
+
+                    a:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        section {
+            padding: 1.5rem 3rem 1.5rem 37rem;
+
+            header {
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                padding-bottom: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                padding-bottom: 1rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            div {
+                p {
+                    font-weight: 300;
+                }
+
+                p:first-of-type, p:nth-of-type(3), p:nth-of-type(5), p:nth-of-type(7), p:nth-of-type(9) {
+                    padding-bottom: 2rem;
+                }
+
+                p:last-of-type, p:nth-of-type(2), p:nth-of-type(4), p:nth-of-type(6), p:nth-of-type(8) {
+                    padding-top: 2rem;
+                }
+
+                ul {
+                    padding: 1rem 0 0 1rem;
+                }
+
+                code {
+                    background-color: #278ea5;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        main {
+
+            nav {
+                position: relative;
+
+                ul {
+                    li {
+                        padding: 1rem;
+                        text-align: center;
+                    }
+                }
+            }
+
+            section {
+                padding: 1rem;
+
+                div {
+                    ul {
+                        padding-left: 1rem;
+                    }
+
+                    code {
+                        padding: 0.5rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

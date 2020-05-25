@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+body main {
+  background-color: #21e6c1;
+}
+
+body main nav {
+  position: fixed;
+  background-color: #278ea5;
+  top: 0;
+  left: 0;
+}
+
+body main nav header {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  color: #333333;
+}
+
+body main nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+body main nav ul li {
+  padding: 2rem;
+}
+
+body main nav ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+body main nav ul li a:hover {
+  color: white;
+}
+
+body main section {
+  padding: 1.5rem 3rem 1.5rem 37rem;
+}
+
+body main section header {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+body main section h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+body main section div p {
+  font-weight: 300;
+}
+
+body main section div p:first-of-type, body main section div p:nth-of-type(3), body main section div p:nth-of-type(5), body main section div p:nth-of-type(7), body main section div p:nth-of-type(9) {
+  padding-bottom: 2rem;
+}
+
+body main section div p:last-of-type, body main section div p:nth-of-type(2), body main section div p:nth-of-type(4), body main section div p:nth-of-type(6), body main section div p:nth-of-type(8) {
+  padding-top: 2rem;
+}
+
+body main section div ul {
+  padding: 1rem 0 0 1rem;
+}
+
+body main section div code {
+  background-color: #278ea5;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  body main nav {
+    position: relative;
+  }
+  body main nav ul li {
+    padding: 1rem;
+    text-align: center;
+  }
+  body main section {
+    padding: 1rem;
+  }
+  body main section div ul {
+    padding-left: 1rem;
+  }
+  body main section div code {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
